@@ -1,0 +1,282 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #dcdc09;
+    --secondary-color: #3d360e;
+    --accent-color: #7b5400;
+    --text-color: #000000;
+    --light-bg: #f8fafc;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--white);
+    border-radius: 0 0 20px 25px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    font-weight: 700;
+    font-style: 'Coiny' 400;
+}
+
+.poin {
+    color: var(--accent-color);
+}
+.navbar a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0 10px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+.nav-links a {
+    padding: 10px;
+    font-weight: bold;
+}
+
+// SECTION HERO
+.home {
+    margin-top: 80px;
+}
+.hero {
+    background-image: url('img/bg-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    transition: var(--transition);
+    animation: fadeUp 1s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: var(--transition);
+    animation: fadeUp 2s ease-in-out;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: var(--transition);
+    text-decoration: none;
+    font-weight: 700;
+    animation: fadeUp 3s ease-in-out;
+}
+.hero button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+/* Container Utama */
+#menu {
+    padding: 80px 7%;
+    background-color: #ffffff; /* Putih bersih untuk kesan premium */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling Judul Section */
+#menu h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #2d3436;
+    margin-bottom: 50px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#menu h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #ff6b6b;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.menu-tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    background: #f1f1f1;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+.tab-btn {
+    padding: 12px 25px;
+    border: none;
+    background: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #636e72;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.tab-btn.active {
+    background: #ff6b6b;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.tab-btn:hover:not(.active) {
+    background: #e1e1e1;
+}
+/* Grid Layout */
+.card-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Jarak antar kartu lebih lebar agar lega */
+    width: 100%;
+    max-width: 1200px;
+    min-height: 400px;
+}
+
+/* Styling Kartu yang Lebih Modern */
+.card-detail {
+    background: #ffffff;
+    border-radius: 30px; /* Lebih bulat */
+    padding: 25px;
+    text-align: left; /* Teks rata kiri terlihat lebih profesional */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid #f1f1f1;
+    position: relative;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.card-detail:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+    border-color: transparent;
+}
+
+/* Wrapper Gambar */
+.card-detail img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* Tipografi Menu */
+.card-detail h5 {
+    font-size: 1.5rem;
+    color: #2d3436;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card-detail p {
+    font-size: 0.95rem;
+    color: #636e72;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Harga & Layout Bawah */
+.card-detail .price {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #2d3436;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Tambahan dekorasi harga */
+.card-detail .price::before {
+    content: 'Price';
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #b2bec3;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+/* Animasi muncul (Fade In) */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Media Query untuk Mobile */
+@media (max-width: 768px) {
+    #menu h2 {
+        font-size: 2rem;
+    }
+    .card-menu {
+        grid-template-columns: 1fr; /* Satu kolom di HP */
+        gap: 25px;
+    }
+}

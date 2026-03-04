@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Gurangseng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <navbar class="navbar">
+            <a href="#home" class="logo">Warung<span class="poin">Gurangseng</span></a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </nav>
+    </navbar>
+
+    <section id="home" class="home">
+        <div class="hero">
+            <h2>Welcome to Warung <span class="poin">Gurangseng</span></h2>
+            <p>Your favorite local eatery in Coblong, Bandung. Enjoy our delicious dishes and cozy atmosphere!</p>
+            <div>
+                <a href="#menu"><button>Order Now!</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div>
+            <h2>About Us</h2>
+            <p>Warung Gurangseng has been serving the Coblong community since 2010. We pride ourselves on offering a variety of traditional Indonesian dishes made with fresh ingredients. Our mission is to provide delicious food at affordable prices while creating a welcoming environment for our customers.</p>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Our Delicious Menu</h2>
+
+        <div class="menu-tabs">
+            <button class="tab-btn active" onclick="filterMenu('berat')">Makanan Berat</button>
+            <button class="tab-btn" onclick="filterMenu('ringan')">Makanan Ringan</button>
+            <button class="tab-btn" onclick="filterMenu('minuman')">Minuman</button>
+        </div>
+
+        <div class="card-menu">
+            <div class="card-detail" data-category="berat">
+                <img src="img/berat-1.jpg" alt="Menu">
+                <h5>Nasi Goreng Spesial</h5>
+                <p>Nasi goreng dengan bumbu rahasia, telur mata sapi, dan ayam suwir.</p>
+                <div class="price">Rp 25.000</div>
+            </div>
+
+            <div class="card-detail" data-category="ringan" style="display: none;">
+                <img src="img/snack-1.jpg" alt="Menu">
+                <h5>French Fries</h5>
+                <p>Kentang goreng renyah dengan taburan truffle salt.</p>
+                <div class="price">Rp 15.000</div>
+            </div>
+
+            <div class="card-detail" data-category="minuman" style="display: none;">
+                <img src="img/drink-1.jpg" alt="Menu">
+                <h5>Es Kopi Susu</h5>
+                <p>Espresso premium dengan susu segar dan gula aren asli.</p>
+                <div class="price">Rp 18.000</div>
+            </div>
+            
+            </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: Jl. Siliwangi dlm 1 No.61/155B Rt.02 Rw.01 Kel. Cipaganti Kec. Coblong 40131</p>
+        <p>Phone: 088223342107</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Warung Gurangseng. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
