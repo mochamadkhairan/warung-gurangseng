@@ -14,20 +14,39 @@
 </head>
 <body>
     
-    <navbar class="navbar">
-            <a href="#home" class="logo">Warung<span class="poin">Gurangseng</span></a>
-            <nav class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#menu">Menu</a>
-                <a href="#contact">Contact</a>
-            </nav>
-    </navbar>
+<navbar class="navbar">
+    <a href="#home" class="logo">Warung<span class="poin">Gurangseng</span></a>
+    <nav class="nav-links desktop-menu">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+</navbar>
+
+<nav class="mobile-bottom-nav">
+    <a href="#home" class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Beranda</span>
+    </a>
+    <a href="#about" class="nav-item">
+        <i class="fas fa-user"></i>
+        <span>Tentang</span>
+    </a>
+    <a href="#menu" class="nav-item">
+        <i class="fas fa-utensils"></i>
+        <span>Menu</span>
+    </a>
+    <a href="#contact" class="nav-item">
+        <i class="fas fa-envelope"></i>
+        <span>Kontak</span>
+    </a>
+</nav>
 
     <section id="home" class="home">
         <div class="hero">
             <h2>Welcome to Warung <span class="poin">Gurangseng</span></h2>
-            <p>Your favorite local eatery in Coblong, Bandung. Enjoy our delicious dishes and cozy atmosphere!</p>
+            <p>Tempat jajanan favorit di Bandung. Nikmati cita rasa autentik yang menggugah selera!</p>
             <div>
                 <a href="#menu"><button>Order Now!</button></a>
             </div>
@@ -38,16 +57,16 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-img" data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="About Us">
+                    <img src="img/docs1.jpg" alt="About Us">
                 </div>
                 <div class="about-text" data-aos="fade-left">
                     <h3>Tentang Kami</h3>
                     <h2>Warung <span class="poin">Gurangseng</span></h2>
                     <p>Berdiri sejak tahun 2020, kami telah membantu lebih dari 100+ klien global untuk mencapai target bisnis mereka melalui solusi kreatif dan teknis yang presisi.</p>
                     <ul class="features">
-                        <li><i class="fas fa-check-circle"></i> Tim Ahli Bersertifikat</li>
-                        <li><i class="fas fa-check-circle"></i> Dukungan 24/7</li>
-                        <li><i class="fas fa-check-circle"></i> Teknologi Terbaru</li>
+                        <li><i class="fas fa-check-circle"></i> Rasa Terbaik</li>
+                        <li><i class="fas fa-check-circle"></i> Pelayanan Terbaik</li>
+                        <li><i class="fas fa-check-circle"></i> Tempat Nongki Banget</li>
                     </ul>
                 </div>
             </div>
@@ -55,7 +74,7 @@
     </section>
 
     <section id="menu">
-        <h2>Our Delicious Menu</h2>
+        <h2>Pilihan Menu Kami</h2>
 
         <div class="menu-tabs">
             <button class="tab-btn active" onclick="filterMenu('berat')">Makanan Berat</button>
@@ -103,7 +122,7 @@
 <section id="contact" class="contact">
     <div class="container">
         <div class="contact-header" data-aos="fade-up">
-            <span class="sub-title">Location & Contact</span>
+            <span class="sub-title">Lokasi & Kontak</span>
             <h2>Temukan Kami di Sini</h2>
         </div>
 
@@ -143,8 +162,8 @@
                     </div>
                     <div class="info-content">
                         <h4>Hubungi Kami</h4>
-                        <p>0882-2334-2107</p>
-                        <a href="https://wa.me/6288223342107" class="btn-wa">Chat WhatsApp</a>
+                        <p>0888-6038-266</p>
+                        <a href="https://wa.me/628886038266" class="btn-wa">Chat WhatsApp</a>
                     </div>
                 </div>
 
@@ -164,7 +183,30 @@
 </section>
 
     <footer>
-        <p>&copy; 2024 Warung Gurangseng. All rights reserved.</p>
+        <div class="footer-content">
+            <h3>Warung <span class="poin">Gurangseng</span></h3>
+            <div class="link">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <h4>Jangan Lupa Mampir!</h4>
+            <div class="social-links">
+                <a href="https://www.facebook.com/warsengwarseng" target="_blank" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/warung_gurangseng" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/628886038266" target="_blank" class="social-link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <div class="credit">
+                <p>&copy; 2026 Warung Gurangseng. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <div class="wa-widget" id="waWidget">
@@ -193,7 +235,7 @@
             </div>
         </div>
         <div class="wa-footer">
-            <a href="https://wa.me/6281234567890?text=Halo%20CorpX,%20saya%20tertarik%20dengan%20layanan%20Anda" target="_blank" class="wa-send-btn">
+            <a href="https://wa.me/628886038266?text=Halo%20WarungGurangseng,%20saya%20tertarik%20dengan%20layanan%20Anda" target="_blank" class="wa-send-btn">
                 Mulai Chat di WhatsApp <i class="fab fa-whatsapp"></i>
             </a>
         </div>
