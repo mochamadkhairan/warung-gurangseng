@@ -2,7 +2,6 @@
 // - alamat : Jl. Siliwangi dlm 1 No.61/155B Rt.02 Rw.01 Kel. Cipaganti Kec. Coblong 40131
 // - kontak : 088223342107
 
-// kategori makanan : Makanan berat, makanan ringan, minuman
 
 function filterMenu(category) {
     // 1. Update tombol aktif
@@ -20,3 +19,20 @@ function filterMenu(category) {
         }
     });
 }
+
+function toggleWaChat() {
+    const waWindow = document.getElementById('waWindow');
+    if (waWindow.style.display === 'block') {
+        waWindow.style.display = 'none';
+    } else {
+        waWindow.style.display = 'block';
+        // Tambahkan suara notifikasi kecil jika ingin lebih interaktif
+    }
+}
+
+// Munculkan widget setelah 3 detik pengunjung masuk website
+window.onload = () => {
+    setTimeout(() => {
+        document.querySelector('.wa-bubble').style.transform = 'scale(1)';
+    }, 3000);
+};

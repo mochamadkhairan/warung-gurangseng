@@ -100,11 +100,68 @@
             </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Address: Jl. Siliwangi dlm 1 No.61/155B Rt.02 Rw.01 Kel. Cipaganti Kec. Coblong 40131</p>
-        <p>Phone: 088223342107</p>
-    </section>
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-header" data-aos="fade-up">
+            <span class="sub-title">Location & Contact</span>
+            <h2>Temukan Kami di Sini</h2>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-map-container" data-aos="zoom-in-right">
+                <div class="map-badge">
+                    <span class="dot"></span> Live Location
+                </div>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.026425394042!2d107.6019313!3d-6.887413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6584218a553%3A0x62953e5e486027c0!2sJl.%20Siliwangi%20Dlm.%20I%20No.61%2C%20Cipaganti%2C%20Kec.%20Coblong%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040131!5e0!3m2!1sid!2sid!4v1709620000000!5m2!1sid!2sid"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="contact-info-wrapper">
+                <div class="info-card" data-aos="fade-left" data-aos-delay="100">
+                    <div class="icon-circle">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Alamat Toko</h4>
+                        <p>Jl. Siliwangi dlm 1 No.61/155B, Cipaganti, Coblong, Bandung 40131</p>
+                        <a href="https://maps.google.com/maps?q=-6.887413,107.6019313" target="_blank" class="btn-maps">
+                            Petunjuk Arah <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info-card" data-aos="fade-left" data-aos-delay="200">
+                    <div class="icon-circle">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Hubungi Kami</h4>
+                        <p>0882-2334-2107</p>
+                        <a href="https://wa.me/6288223342107" class="btn-wa">Chat WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="info-card" data-aos="fade-left" data-aos-delay="300">
+                    <div class="icon-circle">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Jam Operasional</h4>
+                        <p>Senin - Minggu</p>
+                        <span class="open-hours">09:00 - 21:00 WIB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <footer>
         <p>&copy; 2024 Warung Gurangseng. All rights reserved.</p>
@@ -143,28 +200,11 @@
     </div>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
-        duration: 800,
-        once: true
-    });
-
-    function toggleWaChat() {
-    const waWindow = document.getElementById('waWindow');
-    if (waWindow.style.display === 'block') {
-        waWindow.style.display = 'none';
-    } else {
-        waWindow.style.display = 'block';
-        // Tambahkan suara notifikasi kecil jika ingin lebih interaktif
-    }
-}
-
-// Munculkan widget setelah 3 detik pengunjung masuk website
-window.onload = () => {
-    setTimeout(() => {
-        document.querySelector('.wa-bubble').style.transform = 'scale(1)';
-    }, 3000);
-};
-</script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 </html>
