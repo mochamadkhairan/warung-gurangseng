@@ -82,6 +82,11 @@
             <button class="tab-btn" onclick="filterMenu('minuman')">Minuman</button>
         </div>
 
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" id="menuSearch" placeholder="Cari menu favoritmu..." onkeyup="searchMenu()">
+        </div>
+
         <div class="card-menu">
             <div class="card-detail" data-category="berat">
                 <img src="img/29.jpeg" alt="Menu">
@@ -295,8 +300,11 @@
                 <p>Espresso premium dengan susu segar dan gula aren asli.</p>
                 <div class="price">Rp 5.000 | Rp.10.000</div>
             </div>
-            
-            </div>
+
+        </div>
+        <div class="show-more-wrapper" id="showMoreWrapper" style="display: none;">
+            <button id="showMoreBtn" onclick="toggleShowMore()">Lihat Menu Lainnya</button>
+        </div>
     </section>
 
 <section id="contact" class="contact">
