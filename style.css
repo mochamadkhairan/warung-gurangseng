@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 * {
     margin: 0;
@@ -23,6 +25,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 /* Styling Navigasi Utama */
@@ -33,11 +36,11 @@ body {
     padding: 20px;
     background-color: var(--white);
     position: fixed;
-    width: auto;
+    width: 100%;
     top: 0;
     left: 0;
-    right: 0;
     z-index: 1000;
+    box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 /* Styling Logo Warung Gurangseng */
