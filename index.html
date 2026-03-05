@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -32,10 +34,23 @@
         </div>
     </section>
 
-    <section id="about">
-        <div>
-            <h2>About Us</h2>
-            <p>Warung Gurangseng has been serving the Coblong community since 2010. We pride ourselves on offering a variety of traditional Indonesian dishes made with fresh ingredients. Our mission is to provide delicious food at affordable prices while creating a welcoming environment for our customers.</p>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="About Us">
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Tentang Kami</h3>
+                    <h2>Warung <span class="poin">Gurangseng</span></h2>
+                    <p>Berdiri sejak tahun 2020, kami telah membantu lebih dari 100+ klien global untuk mencapai target bisnis mereka melalui solusi kreatif dan teknis yang presisi.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check-circle"></i> Tim Ahli Bersertifikat</li>
+                        <li><i class="fas fa-check-circle"></i> Dukungan 24/7</li>
+                        <li><i class="fas fa-check-circle"></i> Teknologi Terbaru</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -50,9 +65,21 @@
 
         <div class="card-menu">
             <div class="card-detail" data-category="berat">
-                <img src="img/berat-1.jpg" alt="Menu">
-                <h5>Nasi Goreng Spesial</h5>
-                <p>Nasi goreng dengan bumbu rahasia, telur mata sapi, dan ayam suwir.</p>
+                <img src="img/29.jpeg" alt="Menu">
+                <h5>Mie Goreng Spesial</h5>
+                <p>Mie goreng dengan bumbu rahasia, telur mata sapi, dan ayam suwir.</p>
+                <div class="price">Rp 25.000</div>
+            </div>
+            <div class="card-detail" data-category="berat">
+                <img src="img/32.jpeg" alt="Menu">
+                <h5>Bakso Spesial</h5>
+                <p>Bakso dengan bumbu rahasia, telur mata sapi, dan ayam suwir.</p>
+                <div class="price">Rp 25.000</div>
+            </div>
+            <div class="card-detail" data-category="berat">
+                <img src="img/30.jpeg" alt="Menu">
+                <h5>Mie Kuah Spesial</h5>
+                <p>Mie kuah dengan bumbu rahasia, telur mata sapi, dan ayam suwir.</p>
                 <div class="price">Rp 25.000</div>
             </div>
 
@@ -64,8 +91,8 @@
             </div>
 
             <div class="card-detail" data-category="minuman" style="display: none;">
-                <img src="img/drink-1.jpg" alt="Menu">
-                <h5>Es Kopi Susu</h5>
+                <img src="img/4.jpeg" alt="Menu">
+                <h5>Es </h5>
                 <p>Espresso premium dengan susu segar dan gula aren asli.</p>
                 <div class="price">Rp 18.000</div>
             </div>
@@ -83,6 +110,61 @@
         <p>&copy; 2024 Warung Gurangseng. All rights reserved.</p>
     </footer>
 
+    <div class="wa-widget" id="waWidget">
+    <div class="wa-bubble" onclick="toggleWaChat()">
+        <div class="wa-badge">1</div>
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-text">Tanya Kami?</span>
+    </div>
+
+    <div class="wa-window" id="waWindow">
+        <div class="wa-header">
+            <div class="wa-avatar">
+                <img src="https://ui-avatars.com/api/?name=Admin+CorpX&background=075e54&color=fff" alt="Admin">
+                <div class="online-indicator"></div>
+            </div>
+            <div class="wa-header-text">
+                <h4>Customer Support</h4>
+                <p>Online | Respon Cepat</p>
+            </div>
+            <button class="wa-close" onclick="toggleWaChat()">&times;</button>
+        </div>
+        <div class="wa-body">
+            <div class="wa-msg">
+                <p>Halo! 👋 Apa yang mau anda pesan?</p>
+                <span class="wa-time">10:24 AM</span>
+            </div>
+        </div>
+        <div class="wa-footer">
+            <a href="https://wa.me/6281234567890?text=Halo%20CorpX,%20saya%20tertarik%20dengan%20layanan%20Anda" target="_blank" class="wa-send-btn">
+                Mulai Chat di WhatsApp <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        once: true
+    });
+
+    function toggleWaChat() {
+    const waWindow = document.getElementById('waWindow');
+    if (waWindow.style.display === 'block') {
+        waWindow.style.display = 'none';
+    } else {
+        waWindow.style.display = 'block';
+        // Tambahkan suara notifikasi kecil jika ingin lebih interaktif
+    }
+}
+
+// Munculkan widget setelah 3 detik pengunjung masuk website
+window.onload = () => {
+    setTimeout(() => {
+        document.querySelector('.wa-bubble').style.transform = 'scale(1)';
+    }, 3000);
+};
+</script>
 </body>
 </html>
