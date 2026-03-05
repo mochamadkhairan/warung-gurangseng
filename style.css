@@ -234,6 +234,9 @@ body {
 .about-text h3, .about-text h2, .about-text p {
     margin-bottom: 1rem;
 }
+.about-text p {
+    line-height: 1.6;
+}
 .features {
     margin-top: 2rem;
 }
