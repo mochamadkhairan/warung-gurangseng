@@ -10,7 +10,7 @@ Project ini juga digunakan sebagai **portfolio project** untuk menunjukkan kemam
 
 Website ini sudah dideploy dan dapat diakses melalui:
 
-- GitHub Pages  
+- GitHub Pages
 - Cloudflare Pages
 - Vercell
 
@@ -88,7 +88,7 @@ Tujuan dari project ini adalah:
 ---
 
 ## 📸 Preview
-![Preview Website](preview/screenshot.png)
+![Preview Website](img/preview.png)
 Tampilan website menampilkan desain yang clean dengan fokus pada:
 
 - informasi usaha
@@ -102,7 +102,7 @@ Tampilan website menampilkan desain yang clean dengan fokus pada:
 **Mochamad Khairan Athallah Sunandar**
 
 - GitHub : https://github.com/mochamadkhairan
-- Portfolio : 
+- Portfolio : https://mochamadkhairan.github.io/My-Portfolio/
 - Email : moch.khairanathallah@gmail.com
 
 ---
