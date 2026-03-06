@@ -581,9 +581,8 @@ body {
     font-weight: 600;
     margin-top: 20px;
     background: #e0f7fa;
-    padding: 5px 16px;
+    padding: 4px 14px;
     border-radius: 15px;
-    left: 0;
 }
 /* Styling Info Detail (Kanan) */
 .contact-info-wrapper {
