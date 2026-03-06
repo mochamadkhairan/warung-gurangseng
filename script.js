@@ -1,5 +1,3 @@
-// - nama warung : warung gurangseng
-// - alamat : Jl. Siliwangi dlm 1 No.61/155B Rt.02 Rw.01 Kel. Cipaganti Kec. Coblong 40131
 // - kontak : 088223342107
 // Fungsi Show More / Show Less
 function refreshMenuDisplay() {
@@ -10,7 +8,6 @@ function refreshMenuDisplay() {
     // 1. Filter berdasarkan kategori
     const filteredCards = cards.filter(card => card.getAttribute('data-category') === currentCategory);
     
-    // 2. Tentukan berapa banyak yang tampil
     const limit = 5;
     
     cards.forEach(card => card.classList.add('is-hidden')); // Sembunyikan semua dulu

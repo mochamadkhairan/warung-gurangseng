@@ -818,8 +818,8 @@ body {
 }
 @media (max-width: 768px) {
     .wa-widget {
-        bottom: 110px;
-        right: 40px;
+        bottom: 95px;
+        right: 17px;
     }
     .wa-bubble {
         padding: 10px 18px;
